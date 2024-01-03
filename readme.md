@@ -16,7 +16,7 @@
 
 ## Description
 
-The noBorder Crypto Payment Gateway for WHMCS is a plugin that allows WHMCS users to accept cryptocurrency payments via the noBorder platform. This plugin is developed by Hanif Zekri Astaneh and is provided by noBorder.tech.
+The noBorder Crypto Payment Gateway for WHMCS is a plugin that allows WHMCS users to accept cryptocurrency payments via the noBorder platform.
 
 - **Plugin Name:** noBorder Crypto Payment Gateway for WHMCS
 - **Version:** 1.1
@@ -88,7 +88,7 @@ Once the noBorder Crypto Payment Gateway is configured, customers can use it to 
 
 ## Contributing
 
-If you want to contribute to this project or report issues, please visit the GitHub repository: [noBorder Crypto Payment Gateway for WHMCS](https://github.com/hanifzekri/noBorder_whmcs_payment_module).
+If you want to contribute to this project or report issues, please visit the GitHub repository: [noBorder Crypto Payment Gateway for WHMCS](https://github.com/noBorderTech/whmcs_payment_module).
 
 ---
 
