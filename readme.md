@@ -62,7 +62,7 @@ To configure the noBorder Crypto Payment Gateway for WHMCS, follow these steps:
 
    - **API Key:** Enter your noBorder API key. You can obtain this key by visiting [https://noBorder.tech/cryptosite](https://noBorder.tech/cryptosite).
 
-   - **Pay Currency:** Specify the currencies available for payment. You can list multiple currencies separated by a dash (e.g., BTC-ETH-LTC).
+   - **Pay Currency:** Specify the currencies available for payment. You can list multiple currencies separated by a dash (e.g., bitcoin-dogecoin-ethereum).
 
    - **Success Message:** Customize the message to display to customers after a successful payment. You can use placeholders like `{invoice_id}` and `{request_id}` to display the invoice and request IDs.
 
