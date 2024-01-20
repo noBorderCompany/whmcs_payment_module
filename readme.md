@@ -24,8 +24,7 @@ The noBorder Crypto Payment Gateway for WHMCS is a plugin that allows WHMCS user
 - **Author URI:** [https://noBorder.tech](https://noBorder.tech)
 - **Author Email:** info@noBorder.tech
 - **Text Domain:** noBorder_whmcs_payment_module
-- **WC tested up to:** 8.8
-- **Copyright (C):** 2020 noBorder
+- **Copyright (C):** 2023 noBorder
 - **License:** [GPLv3 or later](http://www.gnu.org/licenses/gpl-3.0.html)
 
 ---
@@ -44,7 +43,7 @@ After submitting your website on noBorder.tech and getting an API key, to instal
 
 5. Configure the gateway settings as described in the [Configuration](#configuration) section below.
 
-6. Once configured, save your settings.
+6.Save your settings.
 
 ---
 
@@ -56,17 +55,17 @@ To configure the noBorder Crypto Payment Gateway for WHMCS, follow these steps:
 
 2. Go to the "Setup" menu and select "Payment Gateways."
 
-3. Under the "All Payment Gateways" tab, select "noBorder" from the list of gateways.
+3. Under the "All Payment Gateways" tab, select "noBorder" from the list.
 
 4. Configure the following settings:
 
    - **API Key:** Enter your noBorder API key. You can obtain this key by visiting [https://noBorder.tech/cryptosite](https://noBorder.tech/cryptosite).
 
-   - **Pay Currency:** Specify the currencies available for payment. You can list multiple currencies separated by a dash (e.g., bitcoin-dogecoin-ethereum).
+   - **Acceptable cryptocurrencies:** Specify the crypto currencies available for payment. You can list multiple currencies separated by a dash (e.g., bitcoin-dogecoin-ethereum). If you leave this field empty, the customers will be able to pay through all the active crypto currencies in the noborder.tech.
 
-   - **Success Message:** Customize the message to display to customers after a successful payment. You can use placeholders like `{invoice_id}` and `{request_id}` to display the invoice and request IDs.
+   - **Success Message:** Customize the message to display to customers after a successful payment. You can use placeholders `{invoice_id}` and `{request_id}` to display the invoice ID and request IDs.
 
-   - **Failed Message:** Customize the message to display to customers after a failed payment. You can use placeholders like `{invoice_id}` and `{request_id}` to display the invoice and request IDs.
+   - **Failed Message:** Customize the message to display to customers after a failed payment. You can use placeholders `{invoice_id}` and `{request_id}` to display the invoice ID and request IDs.
 
 5. Save your settings.
 
@@ -94,7 +93,7 @@ If you want to contribute to this project or report issues, please visit the Git
 
 ## Troubleshooting
 
-If you encounter any issues or have questions about the noBorder Crypto Payment Gateway for WooCommerce, please refer to the [official documentation](https://noBorder.tech) or contact our support team at [info@noBorder.tech](mailto:info@noBorder.tech).
+If you encounter any issues or have questions about the noBorder Crypto Payment Gateway for WHMCS, please refer to the [official documentation](https://noBorder.tech) or contact our support team at [info@noBorder.tech](mailto:info@noBorder.tech).
 
 ---
 
@@ -120,7 +119,7 @@ First release.
 
 ---
 
-Thank you for using the noBorder Crypto Payment Gateway for WooCommerce! We appreciate your business.
+Thank you for using the noBorder Crypto Payment Gateway for WHMCS! We appreciate your business.
 
 ---
 
