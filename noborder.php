@@ -41,17 +41,18 @@ if ($invoice_id > 0) {
 			die("Unfortunately, this invoice does not exist or does not belong to you. If you think there is a problem, contact support.");
 
         $user = Capsule::table('tblclients')->where('id', $user_id)->first();
-        
+        $desc = $user->firstname . ' ' . $user->lastname . ' ' . $user->phonenumber;
+		
         $amount = $invoice->total;
-        /* Remove Added Slash In Version 7 Or Above */
-        $systemurl = rtrim($gatewayParams['systemurl'], '/') . '/';
-
+        $systemurl = rtrim($gatewayParams['systemurl'], '/');
+		
         $params = array(
 			'api_key' => $api_key,
 			'amount_value' => $amount,
 			'amount_currency' => strtolower($currency),
 			'pay_currency' => $pay_currency,
             'order_id' => $invoice_id,
+			'desc' => $desc,
             'respond_type' => 'link',
             'callback' => $systemurl . 'modules/gateways/noborder.php?action=confirm&invoiceid=' . $invoice_id
 		);
@@ -155,25 +156,25 @@ function noborder_config(){
             "FriendlyName" => 'API key',
             "Type" => 'text',
 			"Value" => '',
-			"Description" => 'To generate an API key, please refer to the following address. <a href="https://noborder.tech/cryptosite" target="_blank">https://noborder.tech/cryptosite</a>'
+			"Description" => 'Enter your noBorder API key. You can obtain this key by visiting <a href="https://noborder.tech/cryptosite" target="_blank">https://noborder.tech/cryptosite</a>'
         ],
         "pay_currency" => [
-            "FriendlyName" => 'Selectable crypto currencies',
+            "FriendlyName" => 'Acceptable crypto currencies',
             "Type" => 'text',
 			"Value" => '',
-			"Description" => 'By default, customers can pay through all <a href="https://noborder.tech/cryptosite" target="_blank">active currencies</a> in the gate, but if you want to limit the customer to pay through one or more specific crypto currencies, you can declare the name of the crypto currencies through this variable. If you want to declare more than one currency, separate them with a dash ( - ).', 'woo-noborder-gateway'
+			"Description" => 'Specify the crypto currencies available for payment. You can list multiple currencies separated by a dash (e.g., bitcoin-dogecoin-ethereum). If you leave this field empty, the customers will be able to pay through all the active crypto currencies in the noborder.tech.', 'woo-noborder-gateway'
         ],
         "success_massage" => [
             "FriendlyName" => 'Success message',
             "Type" => 'textarea',
             "Value" => 'Your payment has been successfully completed. <br><br> Invoice id : {invoice_id} <br> Track id: {request_id}',
-            "Description" => 'از طریق این فیلد می توانید متن پیامی را که می خواهید بعد از پرداخت موفق به کاربر نمایش داده شودEnter the message you want to display to the customer after a successful payment. You can also choose these placeholders {request_id}, {invoice_id} for showing the invoice id and the tracking id respectively.'
+            "Description" => 'Customize the message to display to customers after a successful payment. You can use placeholders `{invoice_id}` and `{request_id}` to display the invoice ID and request IDs.'
         ],
         "failed_massage" => [
             "FriendlyName" => 'Failure message',
             "Type" => 'textarea',
             "Value" => 'Your payment has failed. Please try again or contact the site administrator in case of a problem. <br><br> Invoice id : {invoice_id} <br> Track id: {request_id}',
-            "Description" => 'Enter the message you want to display to the customer after a failure occurred in payment. You can also choose these placeholders {request_id}, {invoice_id} for showing the invoice id and the tracking id respectively.'
+            "Description" => 'Customize the message to display to customers after a failed payment. You can use placeholders `{invoice_id}` and `{request_id}` to display the invoice ID and request IDs.'
         ]
     ];
 }
