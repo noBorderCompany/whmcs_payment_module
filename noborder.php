@@ -2,11 +2,11 @@
 
 /*
 * Plugin Name: noBorder crypto payment gateway for WHMCS
-* Description: <a href="https://noBorder.tech">noBorder</a> crypto payment gateway for WHMCS.
+* Description: <a href="https://noBorder.company">noBorder</a> crypto payment gateway for WHMCS.
 * Version: 1.1
-* Author: noBorder.tech
-* Author URI: https://noBorder.tech
-* Author Email: info@noBorder.tech
+* Author: noBorder.company
+* Author URI: https://noBorder.company
+* Author Email: info@noBorder.company
 * Text Domain: noBorder_WHMCS_payment_module
 * Tested version up to: 8.8
 * copyright (C) 2020 noBorder
@@ -57,7 +57,7 @@ if ($invoice_id > 0) {
             'callback' => $systemurl . 'modules/gateways/noborder.php?action=confirm&invoiceid=' . $invoice_id
 		);
 						
-		$url = 'https://noborder.tech/action/ws/request_create';
+		$url = 'https://noborder.company/action/ws/request_create';
 		$ch = curl_init($url);
 		curl_setopt($ch, CURLOPT_POST, true);
 		curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($params));
@@ -92,7 +92,7 @@ if ($invoice_id > 0) {
 			'request_id' => $invoice->notes
 		);
 				
-		$url = 'https://noborder.tech/action/ws/request_status';
+		$url = 'https://noborder.company/action/ws/request_status';
 		$ch = curl_init($url);
 		curl_setopt($ch, CURLOPT_POST, true);
 		curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($params));
@@ -156,13 +156,13 @@ function noborder_config(){
             "FriendlyName" => 'API key',
             "Type" => 'text',
 			"Value" => '',
-			"Description" => 'Enter your noBorder API key. You can obtain this key by visiting <a href="https://noborder.tech/cryptosite" target="_blank">https://noborder.tech/cryptosite</a>'
+			"Description" => 'Enter your noBorder API key. You can obtain this key by visiting <a href="https://noborder.company/cryptosite" target="_blank">https://noborder.company/cryptosite</a>'
         ],
         "pay_currency" => [
             "FriendlyName" => 'Acceptable crypto currencies',
             "Type" => 'text',
 			"Value" => '',
-			"Description" => 'Specify the crypto currencies available for payment. You can list multiple currencies separated by a dash (e.g., bitcoin-dogecoin-ethereum). If you leave this field empty, the customers will be able to pay through all the active crypto currencies in the noborder.tech.', 'woo-noborder-gateway'
+			"Description" => 'Specify the crypto currencies available for payment. You can list multiple currencies separated by a dash (e.g., bitcoin-dogecoin-ethereum). If you leave this field empty, the customers will be able to pay through all the active crypto currencies in the noborder.company.', 'woo-noborder-gateway'
         ],
         "success_massage" => [
             "FriendlyName" => 'Success message',
