@@ -20,9 +20,9 @@ The noBorder Crypto Payment Gateway for WHMCS is a plugin that allows WHMCS user
 
 - **Plugin Name:** noBorder Crypto Payment Gateway for WHMCS
 - **Version:** 1.1
-- **Author:** noBorder.tech
-- **Author URI:** [https://noBorder.tech](https://noBorder.tech)
-- **Author Email:** info@noBorder.tech
+- **Author:** noBorder.company
+- **Author URI:** [https://noBorder.company](https://noBorder.company)
+- **Author Email:** info@noBorder.company
 - **Text Domain:** noBorder_whmcs_payment_module
 - **Copyright (C):** 2023 noBorder
 - **License:** [GPLv3 or later](http://www.gnu.org/licenses/gpl-3.0.html)
@@ -31,7 +31,7 @@ The noBorder Crypto Payment Gateway for WHMCS is a plugin that allows WHMCS user
 
 ## Installation
 
-After submitting your website on noBorder.tech and getting an API key, to install the noBorder Crypto Payment Gateway for WHMCS, follow these steps:
+After submitting your website on noBorder.company and getting an API key, to install the noBorder Crypto Payment Gateway for WHMCS, follow these steps:
 
 1. Copy the `noBorder.php` file to the `modules/gateways/` directory of your WHMCS installation.
 
@@ -59,9 +59,9 @@ To configure the noBorder Crypto Payment Gateway for WHMCS, follow these steps:
 
 4. Configure the following settings:
 
-   - **API Key:** Enter your noBorder API key. You can obtain this key by visiting [https://noBorder.tech/cryptosite](https://noBorder.tech/cryptosite).
+   - **API Key:** Enter your noBorder API key. You can obtain this key by visiting [https://noBorder.company/cryptosite](https://noBorder.company/cryptosite).
 
-   - **Acceptable cryptocurrencies:** Specify the crypto currencies available for payment. You can list multiple currencies separated by a dash (e.g., bitcoin-dogecoin-ethereum). If you leave this field empty, the customers will be able to pay through all the active crypto currencies in the noborder.tech.
+   - **Acceptable cryptocurrencies:** Specify the crypto currencies available for payment. You can list multiple currencies separated by a dash (e.g., bitcoin-dogecoin-ethereum). If you leave this field empty, the customers will be able to pay through all the active crypto currencies in the noborder.company.
 
    - **Success Message:** Customize the message to display to customers after a successful payment. You can use placeholders `{invoice_id}` and `{request_id}` to display the invoice ID and request IDs.
 
@@ -87,13 +87,13 @@ Once the noBorder Crypto Payment Gateway is configured, customers can use it to 
 
 ## Contributing
 
-If you want to contribute to this project or report issues, please visit the GitHub repository: [noBorder Crypto Payment Gateway for WHMCS](https://github.com/noBorderTech/whmcs_payment_module).
+If you want to contribute to this project or report issues, please visit the GitHub repository: [noBorder Crypto Payment Gateway for WHMCS](https://github.com/noBordercompany/whmcs_payment_module).
 
 ---
 
 ## Troubleshooting
 
-If you encounter any issues or have questions about the noBorder Crypto Payment Gateway for WHMCS, please refer to the [official documentation](https://noBorder.tech) or contact our support team at [info@noBorder.tech](mailto:info@noBorder.tech).
+If you encounter any issues or have questions about the noBorder Crypto Payment Gateway for WHMCS, please refer to the [official documentation](https://noBorder.company) or contact our support team at [info@noBorder.company](mailto:info@noBorder.company).
 
 ---
 
@@ -105,7 +105,7 @@ This project is licensed under the GPLv3 or later. See the [GNU General Public L
 
 ## Contact Information
 
-If you have any questions or need assistance, please contact us at [info@noBorder.tech](mailto:info@noBorder.tech).
+If you have any questions or need assistance, please contact us at [info@noBorder.company](mailto:info@noBorder.company).
 
 ---
 
