@@ -57,7 +57,7 @@ if ($invoice_id > 0) {
             'callback' => $systemurl . 'modules/gateways/noborder.php?action=confirm&invoiceid=' . $invoice_id
 		);
 						
-		$url = 'https://noborder.company/action/ws/request_create';
+		$url = 'https://noborder.company/action/ws/request/create';
 		$ch = curl_init($url);
 		curl_setopt($ch, CURLOPT_POST, true);
 		curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($params));
@@ -92,7 +92,7 @@ if ($invoice_id > 0) {
 			'request_id' => $invoice->notes
 		);
 				
-		$url = 'https://noborder.company/action/ws/request_status';
+		$url = 'https://noborder.company/action/ws/request/status';
 		$ch = curl_init($url);
 		curl_setopt($ch, CURLOPT_POST, true);
 		curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($params));
